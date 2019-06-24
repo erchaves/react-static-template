@@ -9,7 +9,6 @@
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
-    "dotenv": "^8.0.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-static": "^7.0.0",

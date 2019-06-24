@@ -1,6 +1,4 @@
 import React from 'react';
-import dotenv from 'dotenv';
-dotenv.config();
 
 // See httsp://react-static.js.org for details
 export default {
