@@ -1,10 +1,20 @@
-// This file is used to configure:
-// - static-site generation
-// - Document shell (index.html)
-// - ...tons of other things!
+import React from 'react';
+import dotenv from 'dotenv';
+dotenv.config();
 
-// Get started at httsp://react-static.js.org
-
+// See httsp://react-static.js.org for details
 export default {
-  maxThreads: 1, // Remove this when you start doing any static generation
-}
+  plugins: [
+    "react-static-plugin-sass",
+  ],
+  getRoutes: async ({ dev }) => [
+    {
+      path: '/',
+      template: 'src/Components/Home',
+    },
+    {
+      path: '404',
+      template: 'src/Components/404',
+    }
+  ],
+};
