@@ -8,6 +8,9 @@
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "dependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
